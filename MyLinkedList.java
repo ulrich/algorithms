@@ -2,7 +2,8 @@ import java.io.*;
 import java.util.*;
 
 /**
- * a LinkedList implementation
+ * MyLinkedList implementation
+ * https://coderpad.io/YEZYHTR7
  */
 class Solution {
 
