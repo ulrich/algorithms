@@ -5,7 +5,7 @@ import java.util.*;
  * MyLinkedList implementation
  * https://coderpad.io/YEZYHTR7
  */
-class Solution {
+public class Solution {
 
   public static void main(String[] args) {
     new Solution().should_return_size();
