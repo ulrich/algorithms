@@ -6,11 +6,12 @@ import java.util.*;
  * "Given an integer array, output all pairs that sum up to a specific value k."
  * https://coderpad.io/KMAYXJ6E
  */
+
 public class Solution {
 
   public static void main(String[] args) {
     new Solution().should_find_one_pair();
-    //new Solution().should_find_several_pairs();
+    new Solution().should_find_several_pairs();
   }
 
   public void should_find_one_pair() {
@@ -25,8 +26,6 @@ public class Solution {
     int[] array = new int[]{4, 1, 0, 9, 6, 14, 2, 3, 34, 7, 5, 19};
 
     List<Tuple> tuples = new ArrayPairSum(array).find(5);
-
-    System.out.println(tuples.size());
     
     assert tuples.size() == 3;
   }
@@ -49,8 +48,6 @@ public class Solution {
       
       while(left < right) {
         int sum = array[left] + array[right];
-
-        System.out.println("sum=" + sum);
 
         if (sum == value) {
           tuples.add(new Tuple(array[left], array[right]));
