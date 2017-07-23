@@ -4,6 +4,8 @@ import java.util.function.*;
 
 /**
  * IsUnique implementation
+ * 
+ * Implement an algorithm to determine if a string has all unique characters.
  */
 public class Solution {
 

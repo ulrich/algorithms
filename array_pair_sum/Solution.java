@@ -2,11 +2,10 @@ import java.io.*;
 import java.util.*;
 
 /*
- * Array Pair Sum
- * "Given an integer array, output all pairs that sum up to a specific value k."
- * https://coderpad.io/KMAYXJ6E
+ * ArrayPairSum implentation
+ *
+ * Given an integer array, output all pairs that sum up to a specific value k.
  */
-
 public class Solution {
 
   public static void main(String[] args) {

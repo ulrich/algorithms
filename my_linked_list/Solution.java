@@ -3,7 +3,8 @@ import java.util.*;
 
 /**
  * MyLinkedList implementation
- * https://coderpad.io/YEZYHTR7
+ * 
+ * A dummy implementation of a linked list.
  */
 public class Solution {
 
