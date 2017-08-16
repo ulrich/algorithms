@@ -3,9 +3,9 @@ import java.util.*;
 import java.util.function.*;
 
 /**
- * LinearSearch implementation
+ * OptimizedLinearSearch implementation
  * 
- * Implement the linear search simple algorithm.
+ * Implement an optimized linear search algorithm with sentinel.
  */ 
 public class Solution {
 
@@ -15,24 +15,32 @@ public class Solution {
   }
 
   public void should_return_first_index_of_element() {
-    LinearSearch ls = new LinearSearch();
+    OptimizedLinearSearch ols = new OptimizedLinearSearch();
 
-    assertThat(ls.search(new Integer[]{0, 200, 34, 99, 2, 901, 2}, 2), 4);
+    assertThat(ols.search(new Integer[]{0, 200, 34, 99, 2, 901, 2}, 2), 4);
   }
 
   public void should_return_error_code_if_not_found() {
-    LinearSearch ls = new LinearSearch();
+    OptimizedLinearSearch ols = new OptimizedLinearSearch();
 
-    assertThat(ls.search(new Integer[]{0, 1, 2}, 3), -1);
+    assertThat(ols.search(new Integer[]{0, 1, 2}, 3), -1);
   }
 
-  class LinearSearch {
+  class OptimizedLinearSearch {
 
     public Integer search(Integer[] array, Integer element) {
-      for(int i = 0; i < array.length; i++) {
-        if (array[i] == element) {
-          return i;
-        }
+      Integer i = 0;
+      Integer last = array[array.length - 1];
+
+      array[array.length - 1] = element;
+
+      while(array[i] != element) {
+        i++;
+      }
+      array[array.length - 1] = last;
+
+      if (i < array.length - 1 || array[i] == element) {
+        return i;
       }
       return -1;
     }
