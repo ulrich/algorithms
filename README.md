@@ -1,2 +1,2 @@
 # coderpad
-This repository contains code snipets on my coderpad
+This repository contains code snipets of my algorithms.
