@@ -2,11 +2,6 @@ import java.io.*;
 import java.util.*;
 import java.util.function.*;
 
-/**
- * OptimizedLinearSearch implementation
- * 
- * Implement an optimized linear search algorithm with sentinel.
- */ 
 public class Solution {
 
   public static void main(String[] args) {

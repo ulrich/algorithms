@@ -1,11 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-/**
- * MyLinkedList implementation
- * 
- * A dummy implementation of a linked list.
- */
 public class Solution {
 
   public static void main(String[] args) {
