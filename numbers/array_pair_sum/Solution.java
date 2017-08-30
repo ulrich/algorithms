@@ -1,11 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-/*
- * ArrayPairSum implentation
- *
- * Given an integer array, output all pairs that sum up to a specific value k.
- */
 public class Solution {
 
   public static void main(String[] args) {

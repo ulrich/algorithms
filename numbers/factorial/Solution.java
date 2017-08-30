@@ -2,11 +2,6 @@ import java.io.*;
 import java.util.*;
 import java.util.function.*;
 
-/**
- * Factorial implementation
- * 
- * Implement the factorial algorithm with recursion.
- */ 
 public class Solution {
 
   public static void main(String[] args) {
