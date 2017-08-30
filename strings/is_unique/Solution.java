@@ -2,11 +2,6 @@ import java.io.*;
 import java.util.*;
 import java.util.function.*;
 
-/**
- * IsUnique implementation
- * 
- * Implement an algorithm to determine if a string has all unique characters.
- */
 public class Solution {
 
   public static void main(String[] args) {
