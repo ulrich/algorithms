@@ -1,5 +1,4 @@
 # Algo on numbers
-# Algo on numbers
 
 ## Factorial
 Implement the factorial algorithm with recursion.
