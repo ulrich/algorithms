@@ -12,15 +12,6 @@ import java.util.stream.*;
 */
 public class Solution {
 
-  tact coa
-
-  t a c t c o a
-  a t c t c o a
-  a c t t c o a
-
-
-
-
   public static void main(String[] args) {
     new Solution().should_not_urlify_with_invalid_parameter();
     new Solution().should_urlify_empy_string();
