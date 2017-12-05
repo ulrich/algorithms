@@ -50,11 +50,7 @@ public class Solution {
 
             integers.add(integers.get(0));
 
-            if (integers.size() < 1) {
-                return 0;
-            }
             int value = 0;
-
             for (int i = 0; i < integers.size() - 1; i++) {
                 if (integers.get(i).equals(integers.get(i + 1))) {
                     value += integers.get(i);
