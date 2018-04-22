@@ -8,11 +8,11 @@ public class AnagramTest {
 
     @Test
     public void should_not_find_permutation_for_different_strings() {
-        assertThat(new Anagram().check("abc", "def")).isFalse();
+        assertThat(new Anagram().find("abc", "def")).isFalse();
     }
 
     @Test
     public void should_find_permutation() {
-        assertThat(new Anagram().check("abc", "cab")).isTrue();
+        assertThat(new Anagram().find("abc", "cab")).isTrue();
     }
 }

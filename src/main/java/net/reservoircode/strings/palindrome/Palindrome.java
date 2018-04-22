@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  */
 public class Palindrome {
 
-    public String urlify(String url, Integer length) {
+    public String find(String url, Integer length) {
         return url.chars() //
                 .limit(length) //
                 .mapToObj(i -> (i == ' ') ? "%20" : Character.toString((char) i)) //

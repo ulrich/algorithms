@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 
 public class Anagram {
 
-    public boolean check(String a, String b) {
+    public boolean find(String a, String b) {
         return toHash(a).equals(toHash(b));
     }
 

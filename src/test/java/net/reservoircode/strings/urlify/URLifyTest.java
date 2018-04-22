@@ -3,17 +3,13 @@ package net.reservoircode.strings.urlify;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class URLifyTest {
 
     @Test
     public void should_not_urlify_with_invalid_parameter() {
-        try {
-            new URLify().urlify(null, 5);
-            assertThat(false).isTrue();
-        } catch (Exception e) {
-            // OK
-        }
+        assertThrows(Exception.class, () -> new URLify().urlify(null, 5));
     }
 
     @Test
