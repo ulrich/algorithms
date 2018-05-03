@@ -1,4 +1,4 @@
-package net.reservoircode.data_structures.hash_table;
+package net.reservoircode.data_structures.my_hashtable;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package net.reservoircode.data_structures.hash_table;
+package net.reservoircode.data_structures.my_hashtable;
 
 public class HashTable {
     private static final int SIZE = 4;

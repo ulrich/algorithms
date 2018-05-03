@@ -1,4 +1,4 @@
-package net.reservoircode.data_structures.my_linked_list;
+package net.reservoircode.data_structures.my_linkedlist;
 
 public class MyLinkedList {
     private Node first;

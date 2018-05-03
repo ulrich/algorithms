@@ -1,4 +1,4 @@
-package net.reservoircode.data_structures.my_linked_list;
+package net.reservoircode.data_structures.my_linkedlist;
 
 import org.junit.jupiter.api.Test;
 
@@ -27,5 +27,5 @@ public class MyLinkedListTest {
 
         mll.remove();
         assertThat(mll.size()).isEqualTo(3);
-    }
+            }
 }
