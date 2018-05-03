@@ -13,7 +13,6 @@ public class MyLinkedListTest {
         mll.insert(5);
 
         assertThat(mll.size()).isEqualTo(2);
-        mll.debug();
     }
 
     @Test
@@ -28,6 +27,5 @@ public class MyLinkedListTest {
 
         mll.remove();
         assertThat(mll.size()).isEqualTo(3);
-        mll.debug();
     }
 }
