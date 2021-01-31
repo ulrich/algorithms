@@ -28,6 +28,15 @@ class HashTableTest {
     }
 
     @Test
+    void should_return_null_if_no_element_found() {
+        // Given, When
+        HashTable<HashTable.Person> hashtable = new HashTable<>();
+
+        // Then
+        assertThat(hashtable.get("foo")).isNull();
+    }
+
+    @Test
     void should_put_element_without_collision() {
         // Given
         HashTable<HashTable.Person> hashtable = new HashTable<>(4, logger);
@@ -61,8 +70,8 @@ class HashTableTest {
         assertThat(hashtable.get("id1").getLastName()).isEqualTo("Name1");
         assertThat(hashtable.get("id2").getLastName()).isEqualTo("Name2");
         assertThat(hashtable.get("id3").getLastName()).isEqualTo("Name3");
-        verify(logger, times(0)).debug("Collision when getting key: {}", "id1");
-        verify(logger, times(0)).debug("Collision when getting key: {}", "id2");
+        verify(logger, times(0)).debug("Collision when putting key: {}", "id1");
+        verify(logger, times(0)).debug("Collision when putting key: {}", "id2");
         verify(logger, times(1)).debug("Collision when putting key: {}", "id3");
         verify(logger, times(1)).debug("Collision when getting key: {}", "id3");
     }
