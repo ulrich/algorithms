@@ -1,13 +1,24 @@
 package net.reservoircode.data_structures.my_hashtable;
 
 public class HashTable {
-    private static final int SIZE = 4;
-    private Entry[] entries = new Entry[SIZE];
+    private static final int DEFAULT_SIZE = 4;
+
+    private final Entry[] entries = new Entry[DEFAULT_SIZE];
+
+    private final int size;
+
+    public HashTable() {
+        this(DEFAULT_SIZE);
+    }
+
+    public HashTable(int size) {
+        this.size = size;
+    }
 
     public void put(String key, Person person) {
         Entry entry = new Entry(key, person);
 
-        int position = hash(key) % SIZE;
+        int position = hash(key) % size;
 
         if (entries[position] == null) {
             entries[position] = entry;
@@ -22,7 +33,7 @@ public class HashTable {
     }
 
     public Person get(String key) {
-        int position = hash(key) % SIZE;
+        int position = hash(key) % size;
 
         Entry current = entries[position];
 

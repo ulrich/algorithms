@@ -4,10 +4,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class HashTableTest {
+class HashTableTest {
 
     @Test
-    public void should_add_retrieve_element() {
+    void should_add_retrieve_element() {
         HashTable hashtable = new HashTable();
 
         hashtable.put("id1", new HashTable.Person("User1", "Name1", "0102030405"));
