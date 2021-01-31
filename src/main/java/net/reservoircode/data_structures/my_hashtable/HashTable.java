@@ -12,6 +12,7 @@ public class HashTable<T> {
 
     private final int size;
     private final Entry<T>[] entries;
+    private int count = 0;
 
     public HashTable() {
         this(DEFAULT_SIZE);
@@ -34,6 +35,8 @@ public class HashTable<T> {
 
     public void put(String key, T value) {
         Entry<T> entry = new Entry<>(key, value);
+
+        count++;
 
         int position = hash(key) % size;
 
@@ -68,6 +71,10 @@ public class HashTable<T> {
             current = current.next;
         }
         return null;
+    }
+
+    public int count() {
+        return count;
     }
 
     public int hash(String key) {

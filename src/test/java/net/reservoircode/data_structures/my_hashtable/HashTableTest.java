@@ -33,6 +33,7 @@ class HashTableTest {
         HashTable<HashTable.Person> hashtable = new HashTable<>();
 
         // Then
+        assertThat(hashtable.count()).isEqualTo(0);
         assertThat(hashtable.get("foo")).isNull();
     }
 
@@ -48,6 +49,7 @@ class HashTableTest {
         hashtable.put("id4", new HashTable.Person("User4", "Name4", "0102030405"));
 
         // Then
+        assertThat(hashtable.count()).isEqualTo(4);
         assertThat(hashtable.get("id1").getLastName()).isEqualTo("Name1");
         assertThat(hashtable.get("id2").getLastName()).isEqualTo("Name2");
         assertThat(hashtable.get("id3").getLastName()).isEqualTo("Name3");
@@ -67,6 +69,7 @@ class HashTableTest {
         hashtable.put("id3", new HashTable.Person("User3", "Name3", "0102030405"));
 
         // Then
+        assertThat(hashtable.count()).isEqualTo(3);
         assertThat(hashtable.get("id1").getLastName()).isEqualTo("Name1");
         assertThat(hashtable.get("id2").getLastName()).isEqualTo("Name2");
         assertThat(hashtable.get("id3").getLastName()).isEqualTo("Name3");
