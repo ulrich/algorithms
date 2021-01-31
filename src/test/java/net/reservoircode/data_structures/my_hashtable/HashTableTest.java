@@ -28,6 +28,30 @@ class HashTableTest {
     }
 
     @Test
+    void should_throw_exception_when_putting_with_null_key() {
+        // Given
+        HashTable<String> hashtable = new HashTable<>();
+
+        // When
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> hashtable.put(null, "A string"));
+
+        // Then
+        assertThat(exception.getMessage()).isEqualTo("Key must not be null");
+    }
+
+    @Test
+    void should_throw_exception_when_getting_with_null_key() {
+        // Given
+        HashTable<String> hashtable = new HashTable<>();
+
+        // When
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> hashtable.get(null));
+
+        // Then
+        assertThat(exception.getMessage()).isEqualTo("Key must not be null");
+    }
+
+    @Test
     void should_return_null_if_no_element_found() {
         // Given, When
         HashTable<HashTable.Person> hashtable = new HashTable<>();

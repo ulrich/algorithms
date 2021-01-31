@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import static java.lang.String.format;
+import static java.util.Objects.isNull;
 
 public class HashTable<T> {
 
@@ -34,6 +35,9 @@ public class HashTable<T> {
     }
 
     public void put(String key, T value) {
+        if (isNull(key)) {
+            throw new IllegalArgumentException("Key must not be null");
+        }
         Entry<T> entry = new Entry<>(key, value);
 
         count++;
@@ -53,6 +57,9 @@ public class HashTable<T> {
     }
 
     public T get(String key) {
+        if (isNull(key)) {
+            throw new IllegalArgumentException("Key must not be null");
+        }
         int position = hash(key) % size;
 
         Entry<T> current = entries[position];
