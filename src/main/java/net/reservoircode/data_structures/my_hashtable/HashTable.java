@@ -1,7 +1,11 @@
 package net.reservoircode.data_structures.my_hashtable;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class HashTable<T> {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(HashTable.class);
     private static final int DEFAULT_SIZE = 4;
 
     private final int size;
@@ -12,8 +16,8 @@ public class HashTable<T> {
     }
 
     public HashTable(int size) {
+        LOGGER.debug("Creating hashtable with size: {}", size);
         this.size = size;
-
         entries = new Entry[this.size];
     }
 
@@ -25,7 +29,7 @@ public class HashTable<T> {
         if (entries[position] == null) {
             entries[position] = entry;
         } else {
-            System.out.println("[DEBUG] - Collision in put for " + key);
+            LOGGER.debug("Collision when putting key: {}", key);
             Entry<T> current = entries[position];
             while (current.next != null) {
                 current = current.next;
@@ -45,8 +49,7 @@ public class HashTable<T> {
         if (current.key.equals(key)) {
             return current.value;
         }
-        System.out.println("[DEBUG] - Collision in get for " + key);
-
+        LOGGER.debug("Collision when getting key: {}", key);
         while (current.next != null) {
             if (current.next.key.equals(key)) {
                 return current.next.value;
@@ -61,9 +64,9 @@ public class HashTable<T> {
     }
 
     private static class Entry<T> {
-        String key;
-        T value;
-        Entry<T> next;
+        private final String key;
+        private final T value;
+        private Entry<T> next;
 
         public Entry(String key, T value) {
             this.key = key;
