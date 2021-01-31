@@ -8,11 +8,12 @@ import static java.util.Objects.isNull;
 
 public class HashTable<T> {
 
-    private final Logger logger;
     private static final int DEFAULT_SIZE = 4;
 
     private final int size;
+    private final Logger logger;
     private final Entry<T>[] entries;
+
     private int count = 0;
 
     public HashTable() {
