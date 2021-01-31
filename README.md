@@ -1,4 +1,7 @@
-# Algorithms 
+# Algorithms
+
+![Java CI](https://github.com/ulrich/algorithms/workflows/Java%20CI/badge.svg)
+
 This repository contains code snipets of my algorithms implementations. The subjects come from differents sources like books or websites.
 
 The sources references:
