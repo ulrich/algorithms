@@ -3,9 +3,11 @@ package net.reservoircode.data_structures.my_hashtable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static java.lang.String.format;
+
 public class HashTable<T> {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(HashTable.class);
+    private final Logger logger;
     private static final int DEFAULT_SIZE = 4;
 
     private final int size;
@@ -16,8 +18,17 @@ public class HashTable<T> {
     }
 
     public HashTable(int size) {
-        LOGGER.debug("Creating hashtable with size: {}", size);
+        this(size, LoggerFactory.getLogger(HashTable.class));
+    }
+
+    /* visible for testing */ HashTable(int size, Logger logger) {
+        if (size < 1) {
+            throw new IllegalStateException(format("Invalid size provided: %s", size));
+        }
         this.size = size;
+        this.logger = logger;
+
+        logger.debug("Creating hashtable with size: {}", size);
         entries = new Entry[this.size];
     }
 
@@ -29,7 +40,7 @@ public class HashTable<T> {
         if (entries[position] == null) {
             entries[position] = entry;
         } else {
-            LOGGER.debug("Collision when putting key: {}", key);
+            logger.debug("Collision when putting key: {}", key);
             Entry<T> current = entries[position];
             while (current.next != null) {
                 current = current.next;
@@ -49,7 +60,7 @@ public class HashTable<T> {
         if (current.key.equals(key)) {
             return current.value;
         }
-        LOGGER.debug("Collision when getting key: {}", key);
+        logger.debug("Collision when getting key: {}", key);
         while (current.next != null) {
             if (current.next.key.equals(key)) {
                 return current.next.value;
