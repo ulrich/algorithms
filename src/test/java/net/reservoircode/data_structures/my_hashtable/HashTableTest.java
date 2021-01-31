@@ -8,7 +8,7 @@ class HashTableTest {
 
     @Test
     void should_add_retrieve_element() {
-        HashTable hashtable = new HashTable();
+        HashTable<HashTable.Person> hashtable = new HashTable<>();
 
         hashtable.put("id1", new HashTable.Person("User1", "Name1", "0102030405"));
         hashtable.put("id2", new HashTable.Person("User2", "Name2", "0102030405"));

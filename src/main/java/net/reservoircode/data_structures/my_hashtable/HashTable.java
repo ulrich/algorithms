@@ -1,11 +1,11 @@
 package net.reservoircode.data_structures.my_hashtable;
 
-public class HashTable {
+public class HashTable<T> {
+
     private static final int DEFAULT_SIZE = 4;
 
-    private final Entry[] entries = new Entry[DEFAULT_SIZE];
-
     private final int size;
+    private final Entry<T>[] entries;
 
     public HashTable() {
         this(DEFAULT_SIZE);
@@ -13,10 +13,12 @@ public class HashTable {
 
     public HashTable(int size) {
         this.size = size;
+
+        entries = new Entry[this.size];
     }
 
-    public void put(String key, Person person) {
-        Entry entry = new Entry(key, person);
+    public void put(String key, T value) {
+        Entry<T> entry = new Entry<>(key, value);
 
         int position = hash(key) % size;
 
@@ -24,7 +26,7 @@ public class HashTable {
             entries[position] = entry;
         } else {
             System.out.println("[DEBUG] - Collision in put for " + key);
-            Entry current = entries[position];
+            Entry<T> current = entries[position];
             while (current.next != null) {
                 current = current.next;
             }
@@ -32,10 +34,10 @@ public class HashTable {
         }
     }
 
-    public Person get(String key) {
+    public T get(String key) {
         int position = hash(key) % size;
 
-        Entry current = entries[position];
+        Entry<T> current = entries[position];
 
         if (entries[position] == null) {
             return null;
@@ -58,12 +60,12 @@ public class HashTable {
         return key.hashCode();
     }
 
-    private static class Entry {
+    private static class Entry<T> {
         String key;
-        Person value;
-        Entry next;
+        T value;
+        Entry<T> next;
 
-        public Entry(String key, Person value) {
+        public Entry(String key, T value) {
             this.key = key;
             this.value = value;
             this.next = null;
