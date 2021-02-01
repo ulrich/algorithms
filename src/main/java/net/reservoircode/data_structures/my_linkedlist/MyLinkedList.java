@@ -14,6 +14,9 @@ public class MyLinkedList<T> {
     }
 
     public T removeLast() {
+        if (size == 0) {
+            throw new IllegalStateException("No element available");
+        }
         size--;
         T removedElement = this.head.value;
         head = head.next;
