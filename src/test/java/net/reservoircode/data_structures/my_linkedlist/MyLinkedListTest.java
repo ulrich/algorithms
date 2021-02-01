@@ -7,25 +7,32 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class MyLinkedListTest {
 
     @Test
-    public void should_add_node() {
-        MyLinkedList mll = new MyLinkedList();
-        mll.insert(4);
-        mll.insert(5);
+    public void should_add_element() {
+        // Given
+        MyLinkedList<Integer> list = new MyLinkedList<>();
 
-        assertThat(mll.size()).isEqualTo(2);
+        // When
+        list.add(1);
+        list.add(2);
+
+        // Then
+        assertThat(list.size()).isEqualTo(2);
     }
 
     @Test
-    public void should_delete_node() {
-        MyLinkedList mll = new MyLinkedList();
-        mll.insert(6);
-        mll.insert(7);
-        mll.insert(8);
-        mll.insert(9);
+    public void should_remove_element() {
+        // Given
+        MyLinkedList<Integer> list = new MyLinkedList<>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
 
-        assertThat(mll.size()).isEqualTo(4);
+        // When
+        final Integer removedElement = list.removeLast();
 
-        mll.remove();
-        assertThat(mll.size()).isEqualTo(3);
-            }
+        // Then
+        assertThat(list.size()).isEqualTo(3);
+        assertThat(removedElement).isEqualTo(4);
+    }
 }

@@ -1,41 +1,38 @@
 package net.reservoircode.data_structures.my_linkedlist;
 
-public class MyLinkedList {
-    private Node first;
+public class MyLinkedList<T> {
+    private Node<T> head;
     private Integer size = 0;
 
     public MyLinkedList() {
-        first = new Node(null, null);
+        head = new Node<>(null, null);
     }
 
-    public void insert(Integer value) {
+    public void add(T value) {
         size++;
-        first = new Node(value, first);
+        head = new Node<>(value, head);
     }
 
-    public void remove() {
+    public T removeLast() {
         size--;
-        first = first.next;
+        T removedElement = this.head.value;
+        head = head.next;
+        return removedElement;
     }
 
-    public void debug() {
-        Node actual = first;
-
-        while (actual.next != null) {
-            System.out.println(actual.value);
-            actual = actual.next;
-        }
+    public T getLast() {
+        return head.value;
     }
 
     public Integer size() {
         return size;
     }
 
-    class Node {
-        private final Integer value;
-        private final Node next;
+    private static class Node<T> {
+        private final T value;
+        private final Node<T> next;
 
-        public Node(Integer value, Node next) {
+        public Node(T value, Node<T> next) {
             this.value = value;
             this.next = next;
         }
