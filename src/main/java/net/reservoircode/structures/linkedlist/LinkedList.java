@@ -1,6 +1,6 @@
-package net.reservoircode.data_structures.my_linkedlist;
+package net.reservoircode.structures.linkedlist;
 
-public class MyLinkedList<T> {
+public class LinkedList<T> {
 
     private Node<T> first, last;
     private Integer size = 0;

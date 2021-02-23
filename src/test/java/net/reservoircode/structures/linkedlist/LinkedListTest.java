@@ -1,4 +1,4 @@
-package net.reservoircode.data_structures.my_linkedlist;
+package net.reservoircode.structures.linkedlist;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -7,12 +7,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @Disabled
-public class MyLinkedListTest {
+public class LinkedListTest {
 
     @Test
     public void should_add_element() {
         // Given
-        MyLinkedList<Integer> list = new MyLinkedList<>();
+        LinkedList<Integer> list = new LinkedList<>();
         list.add(1);
         list.add(2);
         list.add(3);
@@ -24,7 +24,7 @@ public class MyLinkedListTest {
     @Test
     void should_remove_first() {
         // Given
-        MyLinkedList<Integer> list = new MyLinkedList<>();
+        LinkedList<Integer> list = new LinkedList<>();
         list.add(1);
 
         // When
@@ -38,7 +38,7 @@ public class MyLinkedListTest {
     @Test
     void should_remove_first_consistency() {
         // Given
-        MyLinkedList<Integer> list = new MyLinkedList<>();
+        LinkedList<Integer> list = new LinkedList<>();
         list.add(1);
 
         // When
@@ -62,7 +62,7 @@ public class MyLinkedListTest {
     @Test
     public void should_remove_each_first_element() {
         // Given
-        MyLinkedList<Integer> list = new MyLinkedList<>();
+        LinkedList<Integer> list = new LinkedList<>();
         list.add(1);
         list.add(2);
         list.add(3);
@@ -92,7 +92,7 @@ public class MyLinkedListTest {
     @Test
     public void should_throw_exception_when_removing_null_element() {
         // Given
-        MyLinkedList<Integer> list = new MyLinkedList<>();
+        LinkedList<Integer> list = new LinkedList<>();
 
         // When
         IllegalStateException exception = assertThrows(IllegalStateException.class, list::removeLast);
