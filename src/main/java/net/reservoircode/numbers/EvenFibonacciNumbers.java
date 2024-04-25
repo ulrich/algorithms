@@ -1,6 +1,8 @@
 package net.reservoircode.numbers;
 
-// https://projecteuler.net/problem=2
+/**
+ * <a href="https://projecteuler.net/problem=2">https://projecteuler.net/problem=2</a>
+ */
 public class EvenFibonacciNumbers {
 
     public int sumOf(int n) {
@@ -15,7 +17,7 @@ public class EvenFibonacciNumbers {
             n1 = n2;
             n2 = n3;
         } while (n3 <= n);
+
         return result;
     }
-
 }

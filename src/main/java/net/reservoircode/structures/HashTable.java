@@ -1,4 +1,4 @@
-package net.reservoircode.structures.hashtable;
+package net.reservoircode.structures;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

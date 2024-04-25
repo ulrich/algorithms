@@ -1,4 +1,4 @@
-package net.reservoircode.structures.patternmatching;
+package net.reservoircode.structures;
 
 import org.junit.jupiter.api.Test;
 
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 import static java.util.stream.Collectors.toList;
-import static net.reservoircode.structures.patternmatching.PatternMatching.when;
+import static net.reservoircode.structures.PatternMatching.when;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

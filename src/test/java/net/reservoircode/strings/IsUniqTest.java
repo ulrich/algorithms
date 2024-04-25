@@ -1,5 +1,6 @@
-package net.reservoircode.strings.is_unique;
+package net.reservoircode.strings;
 
+import net.reservoircode.strings.IsUniq;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

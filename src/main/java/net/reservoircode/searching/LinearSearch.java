@@ -1,5 +1,8 @@
-package net.reservoircode.searching.linear_search;
+package net.reservoircode.searching;
 
+/**
+ * Implementation of linear search simple algorithm.
+ */
 public class LinearSearch {
 
     public int search(int[] array, int element) {

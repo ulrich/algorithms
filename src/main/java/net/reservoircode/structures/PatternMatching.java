@@ -1,4 +1,4 @@
-package net.reservoircode.structures.patternmatching;
+package net.reservoircode.structures;
 
 import java.util.Optional;
 import java.util.function.Function;

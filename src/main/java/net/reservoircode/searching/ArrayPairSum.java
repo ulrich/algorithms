@@ -1,11 +1,15 @@
-package net.reservoircode.searching.array_pair_sum;
+package net.reservoircode.searching;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Given an integer array, output all pairs that sum up to a specific value k.
+ */
 public class ArrayPairSum {
-    private int[] array;
+    private final int[] array;
+
     private int left, right;
 
     public ArrayPairSum(int[] array) {
@@ -34,21 +38,6 @@ public class ArrayPairSum {
         return tuples;
     }
 
-    class Tuple {
-        private final Integer left;
-        private final Integer right;
-
-        public Tuple(Integer left, Integer right) {
-            this.left = left;
-            this.right = right;
-        }
-
-        public Integer getLeft() {
-            return left;
-        }
-
-        public Integer getRight() {
-            return right;
-        }
+    public record Tuple(Integer left, Integer right) {
     }
 }

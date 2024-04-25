@@ -1,4 +1,4 @@
-package net.reservoircode.structures.linkedlist;
+package net.reservoircode.structures;
 
 public class LinkedList<T> {
 

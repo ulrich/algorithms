@@ -1,4 +1,4 @@
-package net.reservoircode.searching.array_pair_sum;
+package net.reservoircode.searching;
 
 import org.junit.jupiter.api.Test;
 
@@ -12,8 +12,8 @@ public class ArrayPairSumTest {
     public void should_find_one_pair() {
         List<ArrayPairSum.Tuple> tuples = new ArrayPairSum(new int[]{4, 1, 0, 9, 6}).find(15);
 
-        assertThat(tuples.get(0).getLeft()).isEqualTo(6);
-        assertThat(tuples.get(0).getRight()).isEqualTo(9);
+        assertThat(tuples.get(0).left()).isEqualTo(6);
+        assertThat(tuples.get(0).right()).isEqualTo(9);
     }
 
     @Test

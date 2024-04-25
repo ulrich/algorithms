@@ -1,5 +1,6 @@
-package net.reservoircode.strings.one_way;
+package net.reservoircode.strings;
 
+import net.reservoircode.strings.OneWay;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

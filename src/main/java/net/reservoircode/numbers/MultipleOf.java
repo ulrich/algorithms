@@ -2,7 +2,9 @@ package net.reservoircode.numbers;
 
 import java.util.List;
 
-// https://projecteuler.net/problem=1
+/**
+ * <a href="https://projecteuler.net/problem=1">https://projecteuler.net/problem=1</a>
+ */
 public class MultipleOf {
 
     public int sumOfMultipleFor(List<Integer> list, int limit) {

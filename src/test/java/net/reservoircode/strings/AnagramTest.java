@@ -1,5 +1,6 @@
-package net.reservoircode.strings.anagram;
+package net.reservoircode.strings;
 
+import net.reservoircode.strings.Anagram;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

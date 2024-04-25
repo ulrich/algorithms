@@ -1,5 +1,8 @@
-package net.reservoircode.searching.optimized_linear_search;
+package net.reservoircode.searching;
 
+/**
+ * Implementation of an optimized linear search with sentinel.
+ */
 public class OptimizedLinearSearch {
 
     public int search(int[] array, int element) {

@@ -1,5 +1,6 @@
-package net.reservoircode.structures.linkedlist;
+package net.reservoircode.structures;
 
+import net.reservoircode.structures.LinkedList;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

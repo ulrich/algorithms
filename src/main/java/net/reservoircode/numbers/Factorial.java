@@ -1,5 +1,8 @@
 package net.reservoircode.numbers;
 
+/**
+ * Implement the factorial algorithm with recursion.
+ */
 public class Factorial {
 
     public int calculate(int element) {

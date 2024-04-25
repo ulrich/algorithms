@@ -1,6 +1,8 @@
 package net.reservoircode.numbers;
 
-// https://projecteuler.net/problem=3
+/**
+ * <a href="https://projecteuler.net/problem=3">https://projecteuler.net/problem=3</a>
+ */
 public class LargerPrimeFactor {
 
     public long getLargerNumber(long number) {

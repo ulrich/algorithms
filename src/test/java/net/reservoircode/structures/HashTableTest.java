@@ -1,5 +1,6 @@
-package net.reservoircode.structures.hashtable;
+package net.reservoircode.structures;
 
+import net.reservoircode.structures.HashTable;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
