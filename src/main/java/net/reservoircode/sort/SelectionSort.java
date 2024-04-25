@@ -1,4 +1,4 @@
-package net.reservoircode.sort.selection_sort;
+package net.reservoircode.sort;
 
 public class SelectionSort {
 
