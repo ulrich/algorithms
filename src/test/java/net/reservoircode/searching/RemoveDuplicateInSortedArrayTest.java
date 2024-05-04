@@ -1,4 +1,4 @@
-package net.reservoircode.sort;
+package net.reservoircode.searching;
 
 import org.junit.jupiter.api.Test;
 

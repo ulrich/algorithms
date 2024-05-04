@@ -1,4 +1,4 @@
-package net.reservoircode.sort;
+package net.reservoircode.searching;
 
 /**
  * Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once.
