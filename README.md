@@ -48,7 +48,7 @@ books or websites.
 
 #### Sorting
 
-- [SelectionSort.java](src/main/java/net/reservoircode/sort/selection_sort/SelectionSort.java)
+- [SelectionSort.java](src/main/java/net/reservoircode/sorting/selection_sort/SelectionSort.java)
 
 #### Searching
 
