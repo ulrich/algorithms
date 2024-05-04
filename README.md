@@ -19,7 +19,7 @@ books or websites.
 
 ### Platforms
 
-#### [https://leetcode.com/ulrichvachon](https://leetcode.com/ulrichvachon)
+#### [https://leetcode.com/ulrichvachon (LT)](https://leetcode.com/ulrichvachon)
 
 #### https://adventofcode.com
 
@@ -55,3 +55,4 @@ books or websites.
 - [ArrayPairSum.java](src/main/java/net/reservoircode/searching/ArrayPairSum.java)
 - [LinearSearch.java](src/main/java/net/reservoircode/searching/LinearSearch.java)
 - [OptimizedLinearSearch.java](src/main/java/net/reservoircode/searching/OptimizedLinearSearch.java)
+- [BestTimeToBuyAndSellStock1.java (LT)](src/main/java/net/reservoircode/searching/BestTimeToBuyAndSellStock1.java)
