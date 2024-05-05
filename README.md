@@ -37,6 +37,7 @@ books or websites.
 - [Factorial.java](src/main/java/net/reservoircode/numbers/Factorial.java)
 - [LargerPrimeFactor.java](src/main/java/net/reservoircode/numbers/LargerPrimeFactor.java)
 - [MultipleOf.java](src/main/java/net/reservoircode/numbers/MultipleOf.java)
+- [Fibonacci.java](src/main/java/net/reservoircode/numbers/Fibonacci.java)
 
 #### String manipulation
 
