@@ -40,6 +40,7 @@ books or websites.
 - [LargerPrimeFactor.java (PE 3)](src/main/java/net/reservoircode/numbers/LargerPrimeFactor.java)<img src="doc/java.png" width="25px">
 - [MultipleOf.java](src/main/java/net/reservoircode/numbers/MultipleOf.java)<img src="doc/java.png" width="25px">
 - [Fibonacci.java](src/main/java/net/reservoircode/numbers/Fibonacci.java)<img src="doc/java.png" width="25px">
+- [FibonacciDP.java](src/main/java/net/reservoircode/numbers/FibonacciDP.java)<img src="doc/java.png" width="25px">
 
 #### String manipulation
 
