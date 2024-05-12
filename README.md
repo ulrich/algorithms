@@ -61,3 +61,5 @@ books or websites.
 - [OptimizedLinearSearch.java](src/main/java/net/reservoircode/searching/OptimizedLinearSearch.java)<img src="doc/java.png" width="25px">
 - [BestTimeToBuyAndSellStock1.java (LT)](src/main/java/net/reservoircode/searching/BestTimeToBuyAndSellStock1.java)<img src="doc/java.png" width="25px">
 - [BestTimeToBuyAndSellStock1.go (LT)](src/main/java/net/reservoircode/searching/BestTimeToBuyAndSellStock1.go)<img src="doc/golang.png" width="25px">
+- [DichotomicSearch.java](src/main/java/net/reservoircode/searching/DichotomicSearch.java)<img src="doc/java.png" width="25px">
+- [DichotomicSearch.go](src/main/java/net/reservoircode/searching/DichotomicSearch.go)<img src="doc/golang.png" width="25px">
