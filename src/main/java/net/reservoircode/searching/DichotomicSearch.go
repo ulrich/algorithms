@@ -1,11 +1,5 @@
 package main
 
-func main() {
-	position := search([]int{1, 5, 16, 21, 32, 32, 75, 152}, 16)
-
-	println(position == 2)
-}
-
 func search(tab []int, expected int) int {
 	left := 0
 	right := len(tab)
