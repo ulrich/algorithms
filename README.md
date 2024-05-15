@@ -63,3 +63,4 @@ books or websites.
 - [BestTimeToBuyAndSellStock1.go (LT)](src/main/java/net/reservoircode/searching/BestTimeToBuyAndSellStock1.go)<img src="doc/golang.png" width="25px">
 - [DichotomicSearch.java (ANB)](src/main/java/net/reservoircode/searching/DichotomicSearch.java)<img src="doc/java.png" width="25px">
 - [DichotomicSearch.go (ANB)](src/main/java/net/reservoircode/searching/DichotomicSearch.go)<img src="doc/golang.png" width="25px">
+- [DichotomicRecursiveSearch.java (ANB)](src/main/java/net/reservoircode/searching/DichotomicRecursiveSearch.java)<img src="doc/java.png" width="25px">
